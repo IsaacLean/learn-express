@@ -1,0 +1,9 @@
+extends auth_layout
+
+block content
+  h2 #{title}
+  p Welcome #{name}.
+  p Your catchphrase is:
+    i #{catchphrase}
+  a(href="/auth/logout")
+    button Logout

@@ -1,0 +1,10 @@
+extends auth_layout
+
+block content
+  h2 #{title}
+  form(method="POST" action="/auth/login")
+    input(type="email" name="email" placeholder="email")
+    input(type="password" name="password" placeholder="password")
+    button(type="submit") Login
+  a(href="/auth/register")
+    button Register
