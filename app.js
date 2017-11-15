@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(express.static('static'));
 app.set('view engine', 'pug');
 
-mongoose.connect('mongodb://localhost:27017/learn-express-mongo');
+mongoose.connect('mongodb://localhost:27017/learn-express-mongodb');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
